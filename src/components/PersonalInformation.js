@@ -10,13 +10,13 @@ const PersonalInformation = () => {
             <Box textAlign={'center'}>
 
                 <Text mb={'40px'} fontWeight={'700'} fontSize='24px' lineHeight={'32px'} letterSpacing='0.1px' color={'#252B42'}>Personal Information</Text>
-                <Box  width={'248px'} mx='auto' height='366px' >
+                <Box width={'248px'} mx='auto' height='366px' >
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <FormControl>
                             <FormLabel fontSize={'14px'} fontWeight='600' lineHeight={'24px'} letterSpacing='0.2px' color={'#252B42'} mt='10px' htmlFor='name'>Name *</FormLabel>
                             <Input height={'50px'} id='name' required {...register('name')} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' placeholder='Full Name *' />
                             <FormLabel fontSize={'14px'} fontWeight='600' lineHeight={'24px'} letterSpacing='0.2px' color={'#252B42'} mt='10px' htmlFor='email'>Email address *</FormLabel>
-                            <Input height={'50px'} required {...register('email')} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' placeholder='Email *' />
+                            <Input height={'50px'} required {...register('email')} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' placeholder='example@email.com' />
                             <FormLabel fontSize={'14px'} fontWeight='600' lineHeight={'24px'} letterSpacing='0.2px' color={'#252B42'} mt='10px' htmlFor='department'>Department *</FormLabel>
                             <Select height={'50px'} id='department' required {...register('depertment')} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' placeholder='Please Select'>
                                 <option value='option1'>Option 1 </option>
@@ -24,13 +24,13 @@ const PersonalInformation = () => {
                             </Select>
                             <FormLabel fontSize={'14px'} fontWeight='600' lineHeight={'24px'} letterSpacing='0.2px' color={'#252B42'} mt='10px' htmlFor='time'>Time *</FormLabel>
                             <Select required id='time' {...register('time')} height={'50px'} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' >
-                            <option value='4:00 Available'>4:00 Available </option>
-                            <option value='4:30 Available'>4:30 Available</option>
-                        </Select>
+                                <option value='4:00 Available'>4:00 Available </option>
+                                <option value='4:30 Available'>4:30 Available</option>
+                            </Select>
                         </FormControl>
-                        <Button mt='40px' type='submit' fontSize={'14px'} width='full' height={'58px'} _hover={{backgroundColor:'#1a90d3'}} fontWeight='700' color={'white'}  bg='#23A6F0' size='lg'>
-                    Book Appointment
-                    </Button>
+                        <Button mt='40px' type='submit' fontSize={'14px'} width='full' height={'58px'} _hover={{ backgroundColor: '#1a90d3' }} fontWeight='700' color={'white'} bg='#23A6F0' size='lg'>
+                            Book Appointment
+                        </Button>
                     </form>
                 </Box>
             </Box>
