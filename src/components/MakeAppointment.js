@@ -12,13 +12,13 @@ const MakeAppointment = () => {
                 <Box width={'537px'} mx='auto' height='280px' >
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <SimpleGrid columns={2} spacing='20px' >
-                            <Input required {...register('name')} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' placeholder='Full Name*' />
-                            <Input required {...register('email')} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' placeholder='Email*' />
-                            <Select required {...register('select')} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' placeholder='Please Select'>
+                            <Input height={'50px'} required {...register('name')} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' placeholder='Full Name*' />
+                            <Input height={'50px'} required {...register('email')} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' placeholder='Email*' />
+                            <Select height={'50px'} required {...register('select')} fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' placeholder='Please Select'>
                                 <option value='option1'>Option 1 </option>
                                 <option value='option2'>Option 2 </option>
                             </Select>
-                            <Select disabled fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' >
+                            <Select height={'50px'} disabled fontSize={'14px'} color='#737373' lineHeight={'28px'} fontWeight='400' >
                                 <option value='4:00 Available'>4:00 Available </option>
                                 <option value='4:30 Available'>4:30 Available</option>
                             </Select>
